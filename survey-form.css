@@ -1,0 +1,102 @@
+/* Base reset and font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Center the form */
+form {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, #description {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 500;
+  color: #2f3640;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 15px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #3498db;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Fieldset styling */
+fieldset {
+  border: none;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* Radio and checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Submit button */
+#submit {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #2980b9;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #1c5980;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+}

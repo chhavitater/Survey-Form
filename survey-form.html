@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey-form.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Kindly fill out this form with the required information</p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label for="name" id="name-label">Name: <input required name="name" id="name" type="text" placeholder="Enter your name"/></label>
+        <label for="email" id="email-label">Email: <input required name="email" id="email" type="email" placeholder="Enter your email address"/></label>
+        <label for="number" id="number-label">Age: <input required name="age" id="number" type="number" min="1" max="100" placeholder="Enter your age"/></label>
+      </fieldset>
+      <fieldset>
+        <label for="campus">Select your campus
+          <select id="dropdown" name="campus">
+            <option value="">(select one)</option>
+            <option value="1">SRM Kattankulathur</option>
+            <option value="2">SRM Ramapuram</option>
+            <option value="3">SRM Vadapalani</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Choose Section</legend>
+        <label for="AB1"><input value="ab1" id="AB1" type="radio" name="section" class="inline" checked/> AB1
+        </label>
+        <label for="AB2"><input value="ab2" id="AB2" type="radio" name="section" class="inline"/> AB2
+        </label>
+        <label class="sub">Choose Subject</label>
+        <label for="subjects"><input required
+        value="mathematics" type="checkbox" id="subjects" name="subjects"/>Mathematics</label>
+        </label>
+        <label for="subjects"><input required value="physics" type="checkbox" id="subjects" name="subjects"/>Physics</label>
+        </label>
+        <label for="subjects"><input required value="chemistry" type="checkbox" id="subjects" name="subjects"/>Chemistry</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Any comments?
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Additional Comments"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
+
